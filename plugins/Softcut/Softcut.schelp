@@ -1,0 +1,26 @@
+class:: Softcut
+summary:: Supercollider version of the monome Softcut software.
+related:: TODO
+categories:: UGens>TODO
+
+description::
+
+Supercollider version of the monome Softcut software.
+
+
+classmethods::
+
+method::ar, kr
+
+argument::TODO
+
+argument::TODO
+
+
+examples::
+
+code::
+
+{ Softcut.ar(/* TODO */) }.play
+
+::
