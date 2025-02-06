@@ -24,6 +24,9 @@ private:
 
   // Member variables
   softcut::Softcut<numVoices> mSoftCut;
+
+  // Buffer
+  std::vector<float> mBuffer;
 };
 
 } // namespace SoftcutSC

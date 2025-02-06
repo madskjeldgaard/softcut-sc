@@ -1,8 +1,11 @@
+> [!NOTE]
+> This project is a work in progress. It currently doesn't work.
+
 # Softcut
 
 Author: Mads Kjeldgaard
 
-Supercollider version of the monome Softcut software.
+Supercollider version of the [monome Softcut](https://github.com/monome/softcut-lib) software.
 
 ### Requirements
 
@@ -27,12 +30,9 @@ Then, use CMake to configure and build it:
 You may want to manually specify the install location in the first step to point it at your
 SuperCollider extensions directory: add the option `-DCMAKE_INSTALL_PREFIX=/path/to/extensions`.
 
+
+CMake will automatically download the supercollider source code if you do not define it.
+
 It's expected that the SuperCollider repo is cloned at `../supercollider` relative to this repo. If
 it's not: add the option `-DSC_PATH=/path/to/sc/source`.
 
-### Developing
-
-Use the command in `regenerate` to update CMakeLists.txt when you add or remove files from the
-project. You don't need to run it if you only change the contents of existing files. You may need to
-edit the command if you add, remove, or rename plugins, to match the new plugin paths. Run the
-script with `--help` to see all available options.
