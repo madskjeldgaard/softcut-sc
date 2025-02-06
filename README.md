@@ -1,5 +1,5 @@
 > [!NOTE]
-> This project is a work in progress. It currently doesn't work.
+> This project is a work in progress. It currently doesn't work. If you want to help out, please feel free to submit a PR.
 
 # Softcut
 
