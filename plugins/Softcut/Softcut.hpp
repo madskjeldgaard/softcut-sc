@@ -6,6 +6,7 @@
 #include "SC_PlugIn.hpp"
 #include "softcut/Softcut.h"
 #include "softcut/Types.h"
+#include <memory>
 
 namespace SoftcutSC {
 
@@ -16,17 +17,17 @@ public:
   Softcut();
 
   // Destructor
-  // ~Softcut();
+  ~Softcut();
 
 private:
   // Calc function
   void next(int nSamples);
 
   // Member variables
-  softcut::Softcut<numVoices> mSoftCut;
+  std::unique_ptr<softcut::Softcut<numVoices>> mSoftCut;
 
   // Buffer
-  std::vector<float> mBuffer;
+  float* mBuffer;
 };
 
 } // namespace SoftcutSC
